@@ -1,113 +1,229 @@
-import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <nav className=' bg-[#5DEBD7] text-white flex justify-between items-center p-4'>
+      <div>
+        <Link href={'/'}>
+          {' '}
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            xmlnsXlink='http://www.w3.org/1999/xlink'
+            width={200}
+            zoomAndPan='magnify'
+            viewBox='0 0 817.5 135.000003'
+            height={'auto'}
+            preserveAspectRatio='xMidYMid meet'
+            version='1.0'
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+            <defs>
+              <g />
+            </defs>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:100ms] opacity-0'
+            >
+              <g transform='translate(5.735285, 95.455993)'>
+                <g>
+                  <path d='M 54.46875 0 L 50.015625 -13.328125 L 20.515625 -13.328125 L 16.078125 0 L 0.3125 0 L 26.21875 -74.03125 L 44.3125 -74.03125 L 70.328125 0 Z M 25.171875 -26.96875 L 45.46875 -26.96875 L 35.328125 -57.203125 Z M 25.171875 -26.96875 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:100ms] opacity-0'
+            >
+              <g transform='translate(72.780197, 95.455993)'>
+                <g>
+                  <path d='M 37.015625 -54.359375 C 44.128906 -54.359375 50.207031 -51.660156 55.25 -46.265625 C 60.289062 -40.867188 62.8125 -34.257812 62.8125 -26.4375 C 62.8125 -18.613281 60.289062 -12.003906 55.25 -6.609375 C 50.207031 -1.210938 44.128906 1.484375 37.015625 1.484375 C 29.609375 1.484375 23.894531 -1.085938 19.875 -6.234375 L 19.875 0 L 6.234375 0 L 6.234375 -74.03125 L 19.875 -74.03125 L 19.875 -46.640625 C 23.894531 -51.785156 29.609375 -54.359375 37.015625 -54.359375 Z M 24 -15.703125 C 26.75 -12.921875 30.238281 -11.53125 34.46875 -11.53125 C 38.695312 -11.53125 42.203125 -12.921875 44.984375 -15.703125 C 47.773438 -18.484375 49.171875 -22.0625 49.171875 -26.4375 C 49.171875 -30.8125 47.773438 -34.390625 44.984375 -37.171875 C 42.203125 -39.953125 38.695312 -41.34375 34.46875 -41.34375 C 30.238281 -41.34375 26.75 -39.953125 24 -37.171875 C 21.25 -34.390625 19.875 -30.8125 19.875 -26.4375 C 19.875 -22.0625 21.25 -18.484375 24 -15.703125 Z M 24 -15.703125 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:200ms] opacity-0'
+            >
+              <g transform='translate(135.383641, 95.455993)'>
+                <g>
+                  <path d='M 35.640625 -54.359375 C 41.421875 -54.359375 46.195312 -52.414062 49.96875 -48.53125 C 53.738281 -44.65625 55.625 -39.300781 55.625 -32.46875 L 55.625 0 L 41.984375 0 L 41.984375 -30.765625 C 41.984375 -34.296875 41.03125 -36.992188 39.125 -38.859375 C 37.21875 -40.734375 34.679688 -41.671875 31.515625 -41.671875 C 27.984375 -41.671875 25.160156 -40.578125 23.046875 -38.390625 C 20.929688 -36.203125 19.875 -32.921875 19.875 -28.546875 L 19.875 0 L 6.234375 0 L 6.234375 -74.03125 L 19.875 -74.03125 L 19.875 -46.953125 C 23.1875 -51.890625 28.441406 -54.359375 35.640625 -54.359375 Z M 35.640625 -54.359375 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:200ms] opacity-0'
+            >
+              <g transform='translate(192.805367, 95.455993)'>
+                <g>
+                  <path d='M 13 -59.21875 C 10.75 -59.21875 8.796875 -60.046875 7.140625 -61.703125 C 5.484375 -63.359375 4.65625 -65.3125 4.65625 -67.5625 C 4.65625 -69.820312 5.484375 -71.796875 7.140625 -73.484375 C 8.796875 -75.179688 10.75 -76.03125 13 -76.03125 C 15.332031 -76.03125 17.328125 -75.179688 18.984375 -73.484375 C 20.640625 -71.796875 21.46875 -69.820312 21.46875 -67.5625 C 21.46875 -65.3125 20.640625 -63.359375 18.984375 -61.703125 C 17.328125 -60.046875 15.332031 -59.21875 13 -59.21875 Z M 6.234375 0 L 6.234375 -52.875 L 19.875 -52.875 L 19.875 0 Z M 6.234375 0 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:300ms] opacity-0'
+            >
+              <g transform='translate(215.329804, 95.455993)'>
+                <g>
+                  <path d='M 18.828125 -37.859375 C 18.828125 -36.453125 19.757812 -35.304688 21.625 -34.421875 C 23.488281 -33.535156 25.757812 -32.757812 28.4375 -32.09375 C 31.125 -31.425781 33.804688 -30.582031 36.484375 -29.5625 C 39.160156 -28.539062 41.429688 -26.828125 43.296875 -24.421875 C 45.171875 -22.023438 46.109375 -19.03125 46.109375 -15.4375 C 46.109375 -10.007812 44.082031 -5.832031 40.03125 -2.90625 C 35.976562 0.0195312 30.914062 1.484375 24.84375 1.484375 C 13.988281 1.484375 6.585938 -2.710938 2.640625 -11.109375 L 14.484375 -17.765625 C 16.035156 -13.179688 19.488281 -10.890625 24.84375 -10.890625 C 29.707031 -10.890625 32.140625 -12.40625 32.140625 -15.4375 C 32.140625 -16.84375 31.207031 -17.988281 29.34375 -18.875 C 27.476562 -19.757812 25.203125 -20.550781 22.515625 -21.25 C 19.835938 -21.957031 17.160156 -22.835938 14.484375 -23.890625 C 11.804688 -24.953125 9.53125 -26.628906 7.65625 -28.921875 C 5.789062 -31.210938 4.859375 -34.085938 4.859375 -37.546875 C 4.859375 -42.753906 6.78125 -46.859375 10.625 -49.859375 C 14.46875 -52.859375 19.242188 -54.359375 24.953125 -54.359375 C 29.253906 -54.359375 33.164062 -53.390625 36.6875 -51.453125 C 40.21875 -49.515625 43.003906 -46.742188 45.046875 -43.140625 L 33.421875 -36.796875 C 31.722656 -40.390625 28.898438 -42.1875 24.953125 -42.1875 C 23.191406 -42.1875 21.726562 -41.800781 20.5625 -41.03125 C 19.40625 -40.257812 18.828125 -39.203125 18.828125 -37.859375 Z M 18.828125 -37.859375 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:300ms] opacity-0'
+            >
+              <g transform='translate(260.907593, 95.455993)'>
+                <g>
+                  <path d='M 35.640625 -54.359375 C 41.421875 -54.359375 46.195312 -52.414062 49.96875 -48.53125 C 53.738281 -44.65625 55.625 -39.300781 55.625 -32.46875 L 55.625 0 L 41.984375 0 L 41.984375 -30.765625 C 41.984375 -34.296875 41.03125 -36.992188 39.125 -38.859375 C 37.21875 -40.734375 34.679688 -41.671875 31.515625 -41.671875 C 27.984375 -41.671875 25.160156 -40.578125 23.046875 -38.390625 C 20.929688 -36.203125 19.875 -32.921875 19.875 -28.546875 L 19.875 0 L 6.234375 0 L 6.234375 -74.03125 L 19.875 -74.03125 L 19.875 -46.953125 C 23.1875 -51.890625 28.441406 -54.359375 35.640625 -54.359375 Z M 35.640625 -54.359375 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:400ms] opacity-0'
+            >
+              <g transform='translate(318.329319, 95.455993)'>
+                <g>
+                  <path d='M 17.765625 -20.828125 C 19.597656 -14.203125 24.566406 -10.890625 32.671875 -10.890625 C 37.890625 -10.890625 41.835938 -12.65625 44.515625 -16.1875 L 55.515625 -9.828125 C 50.296875 -2.285156 42.613281 1.484375 32.46875 1.484375 C 23.726562 1.484375 16.710938 -1.15625 11.421875 -6.4375 C 6.128906 -11.726562 3.484375 -18.394531 3.484375 -26.4375 C 3.484375 -34.40625 6.09375 -41.050781 11.3125 -46.375 C 16.53125 -51.695312 23.226562 -54.359375 31.40625 -54.359375 C 39.164062 -54.359375 45.5625 -51.675781 50.59375 -46.3125 C 55.632812 -40.957031 58.15625 -34.332031 58.15625 -26.4375 C 58.15625 -24.675781 57.984375 -22.804688 57.640625 -20.828125 Z M 17.546875 -31.40625 L 44.515625 -31.40625 C 43.742188 -35 42.140625 -37.675781 39.703125 -39.4375 C 37.273438 -41.207031 34.507812 -42.09375 31.40625 -42.09375 C 27.738281 -42.09375 24.707031 -41.15625 22.3125 -39.28125 C 19.914062 -37.414062 18.328125 -34.789062 17.546875 -31.40625 Z M 17.546875 -31.40625 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:400ms] opacity-0'
+            >
+              <g transform='translate(376.174052, 95.455993)'>
+                <g>
+                  <path d='M 54.984375 0 L 39.125 0 L 19.875 -24 L 19.875 0 L 6.234375 0 L 6.234375 -74.03125 L 19.875 -74.03125 L 19.875 -29.609375 L 38.0625 -52.875 L 54.359375 -52.875 L 33.09375 -26.75 Z M 54.984375 0 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:500ms] opacity-0'
+            >
+              <g transform='translate(428.096782, 95.455993)'>
+                <g />
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:500ms] opacity-0'
+            >
+              <g transform='translate(450.938462, 95.455993)'>
+                <g>
+                  <path d='M 79.53125 -39.765625 L 79.53125 -34.046875 C 79.53125 -23.472656 76.144531 -14.90625 69.375 -8.34375 C 62.601562 -1.789062 53.859375 1.484375 43.140625 1.484375 C 31.722656 1.484375 22.257812 -2.234375 14.75 -9.671875 C 7.238281 -17.109375 3.484375 -26.1875 3.484375 -36.90625 C 3.484375 -47.695312 7.203125 -56.828125 14.640625 -64.296875 C 22.078125 -71.765625 31.296875 -75.5 42.296875 -75.5 C 49.203125 -75.5 55.507812 -73.929688 61.21875 -70.796875 C 66.9375 -67.660156 71.378906 -63.484375 74.546875 -58.265625 L 62.078125 -51.078125 C 60.316406 -54.109375 57.65625 -56.570312 54.09375 -58.46875 C 50.53125 -60.375 46.5625 -61.328125 42.1875 -61.328125 C 35.144531 -61.328125 29.347656 -59.019531 24.796875 -54.40625 C 20.253906 -49.789062 17.984375 -43.957031 17.984375 -36.90625 C 17.984375 -29.925781 20.289062 -24.160156 24.90625 -19.609375 C 29.519531 -15.066406 35.632812 -12.796875 43.25 -12.796875 C 48.894531 -12.796875 53.566406 -14.046875 57.265625 -16.546875 C 60.960938 -19.046875 63.484375 -22.484375 64.828125 -26.859375 L 42.40625 -26.859375 L 42.40625 -39.765625 Z M 79.53125 -39.765625 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:600ms] opacity-0'
+            >
+              <g transform='translate(530.356036, 95.455993)'>
+                <g>
+                  <path d='M 35.640625 -54.359375 C 41.421875 -54.359375 46.195312 -52.414062 49.96875 -48.53125 C 53.738281 -44.65625 55.625 -39.300781 55.625 -32.46875 L 55.625 0 L 41.984375 0 L 41.984375 -30.765625 C 41.984375 -34.296875 41.03125 -36.992188 39.125 -38.859375 C 37.21875 -40.734375 34.679688 -41.671875 31.515625 -41.671875 C 27.984375 -41.671875 25.160156 -40.578125 23.046875 -38.390625 C 20.929688 -36.203125 19.875 -32.921875 19.875 -28.546875 L 19.875 0 L 6.234375 0 L 6.234375 -74.03125 L 19.875 -74.03125 L 19.875 -46.953125 C 23.1875 -51.890625 28.441406 -54.359375 35.640625 -54.359375 Z M 35.640625 -54.359375 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:600ms] opacity-0'
+            >
+              <g transform='translate(587.777762, 95.455993)'>
+                <g>
+                  <path d='M 13 -59.21875 C 10.75 -59.21875 8.796875 -60.046875 7.140625 -61.703125 C 5.484375 -63.359375 4.65625 -65.3125 4.65625 -67.5625 C 4.65625 -69.820312 5.484375 -71.796875 7.140625 -73.484375 C 8.796875 -75.179688 10.75 -76.03125 13 -76.03125 C 15.332031 -76.03125 17.328125 -75.179688 18.984375 -73.484375 C 20.640625 -71.796875 21.46875 -69.820312 21.46875 -67.5625 C 21.46875 -65.3125 20.640625 -63.359375 18.984375 -61.703125 C 17.328125 -60.046875 15.332031 -59.21875 13 -59.21875 Z M 6.234375 0 L 6.234375 -52.875 L 19.875 -52.875 L 19.875 0 Z M 6.234375 0 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:700ms] opacity-0'
+            >
+              <g transform='translate(610.302209, 95.455993)'>
+                <g>
+                  <path d='M 64.71875 -54.359375 C 70.78125 -54.359375 75.625 -52.382812 79.25 -48.4375 C 82.882812 -44.488281 84.703125 -39.203125 84.703125 -32.578125 L 84.703125 0 L 71.0625 0 L 71.0625 -31.625 C 71.0625 -34.789062 70.285156 -37.253906 68.734375 -39.015625 C 67.179688 -40.785156 65 -41.671875 62.1875 -41.671875 C 59.082031 -41.671875 56.664062 -40.644531 54.9375 -38.59375 C 53.207031 -36.550781 52.34375 -33.59375 52.34375 -29.71875 L 52.34375 0 L 38.703125 0 L 38.703125 -31.625 C 38.703125 -34.789062 37.925781 -37.253906 36.375 -39.015625 C 34.820312 -40.785156 32.640625 -41.671875 29.828125 -41.671875 C 26.796875 -41.671875 24.378906 -40.644531 22.578125 -38.59375 C 20.773438 -36.550781 19.875 -33.59375 19.875 -29.71875 L 19.875 0 L 6.234375 0 L 6.234375 -52.875 L 19.875 -52.875 L 19.875 -47.265625 C 23.050781 -51.992188 27.953125 -54.359375 34.578125 -54.359375 C 41.066406 -54.359375 45.863281 -51.816406 48.96875 -46.734375 C 52.488281 -51.816406 57.738281 -54.359375 64.71875 -54.359375 Z M 64.71875 -54.359375 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:700ms] opacity-0'
+            >
+              <g transform='translate(696.805031, 95.455993)'>
+                <g>
+                  <path d='M 13 -59.21875 C 10.75 -59.21875 8.796875 -60.046875 7.140625 -61.703125 C 5.484375 -63.359375 4.65625 -65.3125 4.65625 -67.5625 C 4.65625 -69.820312 5.484375 -71.796875 7.140625 -73.484375 C 8.796875 -75.179688 10.75 -76.03125 13 -76.03125 C 15.332031 -76.03125 17.328125 -75.179688 18.984375 -73.484375 C 20.640625 -71.796875 21.46875 -69.820312 21.46875 -67.5625 C 21.46875 -65.3125 20.640625 -63.359375 18.984375 -61.703125 C 17.328125 -60.046875 15.332031 -59.21875 13 -59.21875 Z M 6.234375 0 L 6.234375 -52.875 L 19.875 -52.875 L 19.875 0 Z M 6.234375 0 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:800ms] opacity-0'
+            >
+              <g transform='translate(719.329479, 95.455993)'>
+                <g>
+                  <path d='M 19.875 -43.78125 C 21.144531 -47.164062 23.242188 -49.703125 26.171875 -51.390625 C 29.097656 -53.085938 32.359375 -53.9375 35.953125 -53.9375 L 35.953125 -38.703125 C 31.796875 -39.191406 28.078125 -38.34375 24.796875 -36.15625 C 21.515625 -33.976562 19.875 -30.351562 19.875 -25.28125 L 19.875 0 L 6.234375 0 L 6.234375 -52.875 L 19.875 -52.875 Z M 19.875 -43.78125 ' />
+                </g>
+              </g>
+            </g>
+            <g
+              fill='#ba7264'
+              fill-opacity='1'
+              className='animate-slidein [--slidein-delay:800ms] opacity-0'
+            >
+              <g transform='translate(753.380608, 95.455993)'>
+                <g>
+                  <path d='M 17.765625 -20.828125 C 19.597656 -14.203125 24.566406 -10.890625 32.671875 -10.890625 C 37.890625 -10.890625 41.835938 -12.65625 44.515625 -16.1875 L 55.515625 -9.828125 C 50.296875 -2.285156 42.613281 1.484375 32.46875 1.484375 C 23.726562 1.484375 16.710938 -1.15625 11.421875 -6.4375 C 6.128906 -11.726562 3.484375 -18.394531 3.484375 -26.4375 C 3.484375 -34.40625 6.09375 -41.050781 11.3125 -46.375 C 16.53125 -51.695312 23.226562 -54.359375 31.40625 -54.359375 C 39.164062 -54.359375 45.5625 -51.675781 50.59375 -46.3125 C 55.632812 -40.957031 58.15625 -34.332031 58.15625 -26.4375 C 58.15625 -24.675781 57.984375 -22.804688 57.640625 -20.828125 Z M 17.546875 -31.40625 L 44.515625 -31.40625 C 43.742188 -35 42.140625 -37.675781 39.703125 -39.4375 C 37.273438 -41.207031 34.507812 -42.09375 31.40625 -42.09375 C 27.738281 -42.09375 24.707031 -41.15625 22.3125 -39.28125 C 19.914062 -37.414062 18.328125 -34.789062 17.546875 -31.40625 Z M 17.546875 -31.40625 ' />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </Link>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <ul className='flex justify-center gap-6 items-center'>
+        <Link href={''}>
+          <li className='animate-slidein [--slidein-delay:200ms] opacity-0'>
+            Home
+          </li>
+        </Link>
+        <Link href={''}>
+          <li className='animate-slidein [--slidein-delay:400ms] opacity-0'>
+            Services
+          </li>
+        </Link>
+        <Link href={''}>
+          <li className='animate-slidein [--slidein-delay:600ms] opacity-0'>
+            Services
+          </li>
+        </Link>
+        <Link href={''}>
+          {' '}
+          <li className='animate-slidein [--slidein-delay:800ms] opacity-0'>
+            Services
+          </li>
+        </Link>
+        <Link href={''}>
+          <li className='animate-slidein [--slidein-delay:1000ms] opacity-0'>
+            Services
+          </li>
+        </Link>
+      </ul>
+    </nav>
   );
 }
